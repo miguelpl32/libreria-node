@@ -31,7 +31,7 @@ app.use(errorHandler);
 
 const PORT = process.env.PORT || 3000;
 
-const server = app.listen(PORT, console.log("Servidor de ejecutan en modo", process.env.NODE_ENV));
+app.listen(PORT, console.log("Servidor de ejecutan en modo", process.env.NODE_ENV));
 
 //capturar errores BD
 process.on("unhandledRejection", (err, promise) => {
